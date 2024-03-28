@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="piano.ico" rel="icon" />
     <script src="script.js" defer></script>
+ 
+
+    </style>
   </head>
   <body>
     <div class="iframe">
@@ -21,6 +24,8 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
+
+
     </div>
 
     <div class="wrapper">
@@ -61,5 +66,24 @@
         <li class="key white" data-key="m"><span>m</span></li>
       </ul>
     </div>
+ 
+ <div class="welcome-popup" id="welcomePopup">
+  <p>Welcome to the Virtual Piano!</p>
+  <p>Use your keyboard keys to play the piano. Each key corresponds to a piano key.</p>
+  <p>Enjoy playing!</p>
+  <button class="reopen-button" onclick="hideWelcomePopup()">Close</button>
+</div>
+<script>
+  window.onload = showWelcomePopup;
+
+  function showWelcomePopup() {
+    document.getElementById("welcomePopup").style.display = "block";
+  }
+
+  function hideWelcomePopup() {
+    document.getElementById("welcomePopup").style.display = "none";
+  }
+</script>
+
   </body>
 </html>
