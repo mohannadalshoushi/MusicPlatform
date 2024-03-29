@@ -3,6 +3,9 @@ main {
   height: 100vh;
   background: black;
 }
+#span{
+  color: red;
+}
 
 .welcome-popup {
   display: none;
@@ -38,7 +41,16 @@ main {
 }
 
 
-
+.reopen-button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(10, 81%, 53%),
+    hsl(27, 91%, 52%),
+    hsl(35, 91%, 52%),
+    hsl(39, 91%, 52%),
+    hsl(42, 91%, 52%)
+  );
+}
 
 
 

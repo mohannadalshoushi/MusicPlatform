@@ -40,6 +40,19 @@
   border-radius: 5px;
 }
 
+.reopen-button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(10, 81%, 53%),
+    hsl(27, 91%, 52%),
+    hsl(35, 91%, 52%),
+    hsl(39, 91%, 52%),
+    hsl(42, 91%, 52%)
+  );
+}
+
+
+
 .iframe {
   display: flex;
   justify-content: center;
