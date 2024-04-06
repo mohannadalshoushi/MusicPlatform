@@ -88,3 +88,13 @@ body {
     hsl(42, 91%, 52%)
   );
 }
+.ContactUs {
+  position: fixed;
+  bottom: 20px; /* Adjusted to create a slight gap from the bottom */
+  right: 20px; /* Positioned to the right side with a gap from the right edge */
+  padding: 15px 20px; /* Increased padding for a better look */
+  background-color: white; /* Darker text color for better readability */
+border-radius: 5px;
+ 
+}
+
