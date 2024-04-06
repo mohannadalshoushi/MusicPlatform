@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Contact Us </title><Form:get></Form:get></title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Contact form section -->
+      <div class="contact-box">
+        <!-- Left side of the form -->
+        <div class="container-left">
+          <h3>Fill the Form*</h3>
+          <!-- Form -->
+          <form id="contactForm" onsubmit="return validateForm()">
+            <div class="input-row">
+              <div class="input-group">
+                <label>Name*</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your Name"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label>Phone*</label>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Enter your Phone number"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Input row for Email and Subject -->
+            <div class="input-row">
+              <div class="input-group">
+                <label>Email*</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label>Subject</label>
+                <input type="text" id="subject" placeholder="Inquiry" />
+              </div>
+            </div>
+
+            <!-- Label for Message textarea -->
+            <label>Message*</label>
+            <textarea
+              rows="10"
+              id="message"
+              placeholder="Enter your Message"
+              required
+            ></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+        <!-- Right side with contact information -->
+        <div class="container-right">
+          <h3>Reach Us</h3>
+          <!-- Table for contact information -->
+          <table>
+            <tr>
+              <td>Email:</td>
+              <td>cis@ju.edu.jo</td>
+            </tr>
+
+            <tr>
+              <td>Phone:</td>
+              <td>+962 6 5355 000</td>
+            </tr>
+
+            <tr>
+              <td>Address:</td>
+              <td>2V7F+J5X, Amman</td>
+            </tr>
+          </table>
+
+          <!-- Map section -->
+          <div class="map">
+            <!-- Google Map iframe -->
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.0363649390956!2d35.87041380939014!3d32.01412862247636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c9f9da28158ef%3A0x8eaf1c916f028efd!2sKing%20Abdullah%20II%20School%20of%20Information%20Technology!5e0!3m2!1sen!2sjo!4v1712398060682!5m2!1sen!2sjo"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript file -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
